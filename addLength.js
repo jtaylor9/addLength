@@ -5,11 +5,8 @@
 var array1 = ["apple", "pear"];
 var array2 = ["you", "can", "win"];
 
-function addLength(array) {
-  var resultArray = [];
-
-
-  return resultArray.push(array,_.reduce(array, function(memo, num){ return memo + array[memo].length;}, 0));
+function addLength(array) {}
+  return _.map(array, function(arr){ return arr + " " + arr.length;};
 }
 
 console.log(addLength(array1));
